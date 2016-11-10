@@ -7,6 +7,8 @@
 //
 
 #import "PPViewController.h"
+@import MyLibrary;
+
 
 @interface PPViewController ()
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+  [Object hello];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
