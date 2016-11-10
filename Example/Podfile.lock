@@ -1,0 +1,22 @@
+PODS:
+  - Expecta (1.0.5)
+  - MyLibrary (0.1.0)
+  - Specta (1.0.5)
+
+DEPENDENCIES:
+  - Expecta
+  - MyLibrary (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  MyLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  MyLibrary: 0d72d34910ddf011f550104684226b564dfaa822
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+
+PODFILE CHECKSUM: 13eb60d59d35518bca9c63325934f3f0a1c3282d
+
+COCOAPODS: 1.0.1
