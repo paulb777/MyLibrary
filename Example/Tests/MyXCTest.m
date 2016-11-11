@@ -34,12 +34,6 @@
   XCTAssertTrue(9 == [Object plusOne:8]);
 }
 
-
-- (void)testIncrementFail {
-  [Object hello];
-  XCTAssertTrue(9 == [Object plusOne:58]);
-}
-
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
