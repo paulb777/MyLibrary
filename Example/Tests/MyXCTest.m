@@ -34,9 +34,9 @@
   XCTAssertTrue(9 == [Object plusOne:8]);
 }
 
-- (void)testIncrementFail {
+- (void)testIncrementNegative {
   [Object hello];
-  XCTAssertTrue(9 == [Object plusOne:89]);
+  XCTAssertTrue(-9 == [Object plusOne:-10]);
 }
 
 - (void)testPerformanceExample {
