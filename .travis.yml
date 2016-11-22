@@ -2,6 +2,7 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
+
 language: objective-c
 osx_image: xcode8.1
 sudo: false
@@ -20,6 +21,6 @@ script:
   - xcrun instruments -s devices
   - echo staring build and test...
   - open -a "simulator" --args -CurrentDeviceUDID $UDID
-  - xcodebuild test -project ./MovingHelper/MovingHelper.xcodeproj -scheme MovingHelper -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=$UDID"
+  - xcodebuild test -workspace Example/MyLibrary.xcworkspace -scheme MyLibrary-Example -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=$UDID"
   - osascript -e 'tell app "Simulator" to quit'
   - pod lib lint
