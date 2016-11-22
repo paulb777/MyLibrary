@@ -2,15 +2,24 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode8.1
 language: objective-c
+osx_image: xcode8.1
 sudo: false
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+
+## Create a build matrix to execute against multiple simulators/iOS versions
+## The UDID will be used below to determin the destination to test against
+## where the script section will be run once for each definition
+## ISO_DEVICE is not used in the script but is useful to know what OS version is tested and will show up in Travis to make it easer to read
+env:
+  - UDID="D33B8457-888C-47C9-9D75-B0B2DEF57825", IOS_DEVICE="iPhone 6 (9.3)"
+  - UDID="A7D4EB80-EEBB-4E7A-8C50-C737F5DD9652", IOS_DEVICE="iPhone 7 (10.1)"
+
+### Setting up the simulator for auto-test and running the build via the xcodebuild tool:
 script:
-- set -o pipefail && xcodebuild test -workspace Example/MyLibrary.xcworkspace -scheme MyLibrary-Example -sdk iphonesimulator9.3 -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' ONLY_ACTIVE_ARCH=NO | xcpretty
-- set -o pipefail && xcodebuild test -workspace Example/MyLibrary.xcworkspace -scheme MyLibrary-Example -sdk iphonesimulator10.1 -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+  # The xcrun with devices here will print out a list of available devices you can snag the UDIDs for
+  - xcrun instruments -s devices
+  - echo staring build and test...
+  - open -a "simulator" --args -CurrentDeviceUDID $UDID
+  - xcodebuild test -project ./MovingHelper/MovingHelper.xcodeproj -scheme MovingHelper -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=$UDID"
+  - osascript -e 'tell app "Simulator" to quit'
+  - pod lib lint
