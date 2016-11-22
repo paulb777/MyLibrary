@@ -21,6 +21,7 @@ script:
   - xcrun instruments -s devices
   - echo staring build and test...
   - open -a "simulator" --args -CurrentDeviceUDID $UDID
-  - xcodebuild test -workspace Example/MyLibrary.xcworkspace -scheme MyLibrary-Example -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=$UDID"
+  # suggestion from https://github.com/travis-ci/travis-ci/issues/6675 for exit code 65 failure
+  - travis_retry xcodebuild test -workspace Example/MyLibrary.xcworkspace -scheme MyLibrary-Example -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=$UDID"
   - osascript -e 'tell app "Simulator" to quit'
   - pod lib lint
