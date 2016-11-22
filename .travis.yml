@@ -12,8 +12,8 @@ sudo: false
 ## where the script section will be run once for each definition
 ## ISO_DEVICE is not used in the script but is useful to know what OS version is tested and will show up in Travis to make it easer to read
 env:
-  - UDID="D33B8457-888C-47C9-9D75-B0B2DEF57825", IOS_DEVICE="iPhone 6 (9.3)"
-  - UDID="A7D4EB80-EEBB-4E7A-8C50-C737F5DD9652", IOS_DEVICE="iPhone 7 (10.1)"
+  - UDID="808A0798-21A1-4579-B15E-DA3CC5782582", IOS_DEVICE="iPhone 6 (9.3)"
+  - UDID="9464677E-9962-4C3B-91E8-C969B6337A68", IOS_DEVICE="iPhone 7 (10.1)"
 
 ### Setting up the simulator for auto-test and running the build via the xcodebuild tool:
 script:
