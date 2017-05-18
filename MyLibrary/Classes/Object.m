@@ -6,7 +6,7 @@
 //
 //
 
-#import <MyLibrary/Object.h>
+#import "Object.h"
 
 @implementation Object
 
