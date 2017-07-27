@@ -7,7 +7,10 @@
 //
 
 #import "PPViewController.h"
-@import MyLibrary;
+#import "Object.h"
+#import "Object2.h"
+#import "Object3.h"
+#import "FirebaseCore/FirebaseCore.h"
 
 
 @interface PPViewController ()
@@ -18,8 +21,11 @@
 
 - (void)viewDidLoad
 {
+  [FIRConfiguration sharedInstance];
     [super viewDidLoad];
-  [Object hello];
+  [Object1 hello];
+//    [Object2 hello];
+        [Object3 hello];
 
 	// Do any additional setup after loading the view, typically from a nib.
 }

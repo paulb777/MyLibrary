@@ -1,7 +1,8 @@
 {
   "name": "MyLibrary",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "summary": "MyLibrary is a sample pod to experiment with workflow",
+  "static_framework": true,
   "description": "TODO: Add long description of the pod here.TODO: Add long description of the pod here.TODO:\nAdd long description of the pod here.TODO: Add long description of the pod here.\nTODO: Add long description of the pod here.TODO: Add long description of the pod here.",
   "homepage": "https://github.com/paulb777/MyLibrary",
   "license": {
@@ -13,10 +14,15 @@
   },
   "source": {
     "git": "https://github.com/paulb777/MyLibrary.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MyLibrary/Classes/**/*"
+  "source_files": "MyLibrary/Classes/**/*",
+  "dependencies": {
+    "FirebaseCore": [
+
+    ]
+  }
 }

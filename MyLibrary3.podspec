@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'MyLibrary'
+  s.name             = 'MyLibrary3'
   s.version          = '0.0.1'
-  s.summary          =  'MyLibrary is a sample pod to experiment with workflow'
+  s.summary          =  'MyLibrary3 is a sample pod to experiment with workflow'
   s.static_framework = true
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.TODO: Add long description of the pod
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MyLibrary/Classes/**/*'
+  s.source_files = 'MyLibrary3/Classes/**/*'
   
   # s.resource_bundles = {
   #   'MyLibrary' => ['MyLibrary/Assets/*.png']
@@ -42,6 +42,8 @@ TODO: Add long description of the pod here.TODO: Add long description of the pod
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'FirebaseCore'
+  s.dependency 'MyLibrary2'
+
 
 end
 

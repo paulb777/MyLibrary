@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Object1 : NSObject
+@interface Object2 : NSObject
 + (void) hello;
 + (int) plusOne:(int)value;
 

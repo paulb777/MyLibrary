@@ -6,13 +6,15 @@
 //
 //
 
-#import "Object.h"
+#import "Object2.h"
+#import "Object3.h"
 
-@implementation Object1
+@implementation Object3
 
 + (void) hello
 {
-  NSLog(@"hello from MyLibrary");
+  NSLog(@"hello from MyLibrary3");
+  [Object2 hello];
 }
 
 + (int) plusOne:(int)value
