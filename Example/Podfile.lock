@@ -1,43 +1,43 @@
 PODS:
-  - FirebaseCore (4.0.4):
+  - FirebaseCore (3.999.18):
+    - FirebaseCore/Core (= 3.999.18)
+  - FirebaseCore/Core (3.999.18):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-    - nanopb (~> 0.3)
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - MyLibrary (0.0.1):
     - FirebaseCore
-  - MyLibrary2 (0.0.4)
+  - MyLibrary2 (0.0.5)
   - MyLibrary3 (0.0.1):
     - FirebaseCore
     - MyLibrary2
-  - nanopb (0.3.8):
-    - nanopb/decode (= 0.3.8)
-    - nanopb/encode (= 0.3.8)
-  - nanopb/decode (0.3.8)
-  - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
   - MyLibrary (from `../`)
-  - MyLibrary2 (from `../`)
   - MyLibrary3 (from `../`)
 
 EXTERNAL SOURCES:
   MyLibrary:
     :path: ../
-  MyLibrary2:
-    :path: ../
   MyLibrary3:
     :path: ../
 
 SPEC CHECKSUMS:
-  FirebaseCore: cfc042628ef9f20debe09c0eb683135fcd404cb4
+  FirebaseCore: fd1ac147483f2e69d4d9b064859347b8de1ebaa1
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   MyLibrary: ad26681126362a55baf56e9237f39f597b5ca534
-  MyLibrary2: 426e23eb44d7edb2b6bdffd31fd4dca5a1818f66
+  MyLibrary2: f728be114db9c1820e6382bfb668fa06ddac5acf
   MyLibrary3: 38ab251709722a29f20e8ad89bc5bf66f640075a
-  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: d1b5e977de7f2e08220dd71412caa7e9ad5b52fb
+PODFILE CHECKSUM: 23b01bd27cf1dc89592d3ca679833acd107221cd
 
 COCOAPODS: 1.3.0.beta.3

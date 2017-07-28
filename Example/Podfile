@@ -1,8 +1,10 @@
+source "sso://user/paulbeusterien/Specs"
+source "https://github.com/CocoaPods/Specs.git"
+
 use_frameworks!
 
 target 'MyLibrary_Example' do
   pod 'MyLibrary', :path => '../'
-  pod 'MyLibrary2', :path => '../'
     pod 'MyLibrary3', :path => '../'
 
   target 'MyLibrary_Tests' do
