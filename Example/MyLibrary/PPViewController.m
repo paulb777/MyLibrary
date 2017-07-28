@@ -6,6 +6,7 @@
 //  Copyright (c) 2016 Paul Beusterien. All rights reserved.
 //
 
+@import MyLibrary2;
 #import "PPViewController.h"
 #import "Object.h"
 #import "Object2.h"
