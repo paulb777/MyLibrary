@@ -44,6 +44,7 @@ TODO: Add long description of the pod here.TODO: Add long description of the pod
   s.dependency 'FirebaseCore'
   s.dependency 'MyLibrary2'
 
+  s.dependency 'MyLibrary4'
 
 end
 

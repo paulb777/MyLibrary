@@ -1,4 +1,5 @@
 PODS:
+  - Expecta (1.0.6)
   - FirebaseCore (3.999.18):
     - FirebaseCore/Core (= 3.999.18)
   - FirebaseCore/Core (3.999.18):
@@ -20,10 +21,15 @@ PODS:
   - MyLibrary3 (0.0.1):
     - FirebaseCore
     - MyLibrary2
+    - MyLibrary4
+  - MyLibrary4 (0.0.6)
+  - Specta (1.0.6)
 
 DEPENDENCIES:
+  - Expecta
   - MyLibrary (from `../`)
   - MyLibrary3 (from `../`)
+  - Specta
 
 EXTERNAL SOURCES:
   MyLibrary:
@@ -32,12 +38,15 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   FirebaseCore: fd1ac147483f2e69d4d9b064859347b8de1ebaa1
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   MyLibrary: ad26681126362a55baf56e9237f39f597b5ca534
   MyLibrary2: f728be114db9c1820e6382bfb668fa06ddac5acf
-  MyLibrary3: 38ab251709722a29f20e8ad89bc5bf66f640075a
+  MyLibrary3: 343735ab4f3484c4e26f82c201064d10639407b4
+  MyLibrary4: 78df5cb3b6c68146114b1a8b894880b35655af15
+  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
 
-PODFILE CHECKSUM: 23b01bd27cf1dc89592d3ca679833acd107221cd
+PODFILE CHECKSUM: 9ef6b46e20c6fd4d295425e27c7ec4b4ed28827d
 
 COCOAPODS: 1.3.0.beta.3

@@ -30,13 +30,13 @@
 }
 
 - (void)testIncrement {
-  [Object hello];
-  XCTAssertTrue(9 == [Object plusOne:8]);
+  [Object1 hello];
+  XCTAssertTrue(9 == [Object1 plusOne:8]);
 }
 
 - (void)testIncrementNegative {
-  [Object hello];
-  XCTAssertTrue(-9 == [Object plusOne:-10]);
+  [Object1 hello];
+  XCTAssertTrue(-9 == [Object1 plusOne:-10]);
 }
 
 - (void)testPerformanceExample {
