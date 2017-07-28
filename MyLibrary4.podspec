@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyLibrary4'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          =  'MyLibrary4 is a sample pod to experiment with workflow'
   s.static_framework = false
 
